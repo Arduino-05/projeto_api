@@ -33,14 +33,14 @@ def sexoidade(data):
     idades = [pessoa['idade'] for pessoa in data if float(pessoa['salario']) > 2000]
     sexos = [pessoa['sexo'] for pessoa in data if float(pessoa['salario']) > 2000]
 
-    if not sexos:  # Se a lista de sexos estiver vazia, retorna None
+    if not sexos: 
         return None
 
-    # Conta quantos homens e mulheres existem na lista de sexos
+
     count_masculino = sexos.count('Masculino')
     count_feminino = sexos.count('Feminino')
 
-    # Determina o sexo predominante com base nas contagens
+
     if count_masculino > count_feminino:
         sexo_maior_2000 = 'Masculino'
     elif count_masculino < count_feminino:
@@ -50,5 +50,6 @@ def sexoidade(data):
 
 
     intervalo_idades = (min(idades), max(idades))
-    return intervalo_idades, sexo_maior_2000
+    lista = [count_feminino, count_masculino, intervalo_idades, sexo_maior_2000]
+    return lista
 

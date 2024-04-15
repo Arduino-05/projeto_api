@@ -42,7 +42,18 @@ def profissoes():
     profissoes = funcoes.media_profissao(data)
     return jsonify({"status": 200, "data":profissoes})
 
-@app.route("/idades/sexo=true")
-def sexo():
+@app.route("/idade/<string:tipo>")
+def sexos(tipo: str):
+    
     sexo = funcoes.sexoidade(data)
-    return jsonify({"status":200, "data":sexo})
+    cout = sexo[0]
+    coutm = sexo[1]
+    inter = sexo[2] , sexo[3]
+    
+    if tipo == "f":
+        return jsonify({"status":200, "data":cout})
+    elif tipo == "m":
+        return jsonify({"status":200, "data":coutm})
+    elif tipo == "intervalo":
+        return jsonify({"status":200, "data":inter})
+
