@@ -23,3 +23,8 @@ No macOS ou Linux:
 source myenv/bin/activate
 Este comando ativará o ambiente virtual e adicionará o prefixo (myenv) à linha de comando, indicando 
 que o ambiente virtual está ativo.
+
+Instalar o Flask
+
+Para instalar o flask basta voce ir na pasta do prejeto, abri o terminal e digitar o comando:
+pip install flask
