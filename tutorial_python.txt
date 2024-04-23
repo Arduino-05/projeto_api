@@ -1,5 +1,19 @@
 Iniciando tutorial de Python
 
+Oque e Python
+
 Python e uma linguagem de programação de alto nivel, interpretada e dinamica. É também conhecida por
 ter sua sintaxe clara e simples, oque facilita para que novos programadores utilizem ela por ser uma
 otima escolha para iniciantes.
+
+Passo a passo downloads
+
+Primeiro passo para fazer o dowload do python, voce tem que assessar o site oficial do Python em 
+https://www.python.org/downloads/
+
+Segundo passo agora ja dentro do site procure a versão mais recente antes de fazer o dowload.
+Hoje dia 23/04/2024 a versão mais recente e a Python 3.11.2.
+
+Terceiro passo click no link do instalador executavel de acordo com as bits do deu sistema podendo ser
+Windows x86-64 ou Windows x86-32
+
