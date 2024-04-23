@@ -1,1 +1,5 @@
 Iniciando tutorial de Python
+
+Python e uma linguagem de programação de alto nivel, interpretada e dinamica. É também conhecida por
+ter sua sintaxe clara e simples, oque facilita para que novos programadores utilizem ela por ser uma
+otima escolha para iniciantes.
