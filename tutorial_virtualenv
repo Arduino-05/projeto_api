@@ -1,2 +1,11 @@
 Iniciando tutorial virtualenv
 
+Oque e
+
+Virtualenv é uma ferramenta que cria ambientes Python isolados, permitindo instalar pacotes sem afetar 
+outros projetos. Com ele, é possível ter diferentes versões de pacotes em ambientes separados, evitando 
+conflitos. Ideal para desenvolvedores que trabalham em múltiplos projetos com requisitos distintos.
+
+
+
+
