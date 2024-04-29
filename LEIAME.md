@@ -26,3 +26,42 @@ A API consiste em três arquivos:
 
 ### randan_data.py
 - **Descrição:** Representa o banco de dados utilizado pela API.
+
+Agora vou fazer um passo a passo de puxar esse repositorio para sua maquina
+
+Inicialize o repositório Git local:
+
+Abra o terminal ou prompt de comando.
+Navegue até o diretório do seu projeto.
+Execute o comando git init para inicializar o repositório Git local.
+
+Adicione os arquivos do seu projeto:
+
+Use o comando git add . para adicionar todos os arquivos do seu projeto ao repositório.
+Ou use git add <arquivo> para adicionar arquivos específicos.
+
+Faça o primeiro commit:
+
+Execute o comando git commit -m "Commit inicial" para criar o primeiro commit.
+
+Crie um repositório remoto:
+
+Acesse o site do GitHub (ou outro serviço de hospedagem de repositórios, como GitLab ou Bitbucket).
+Faça login na sua conta.
+Clique em "Novo repositório" ou "Create new repository".
+Preencha as informações do novo repositório, como nome, descrição e visibilidade.
+Não inicialize o repositório com um arquivo README.
+
+Vincule o repositório local ao repositório remoto:
+
+Copie a URL do repositório remoto que você acabou de criar.
+No terminal, execute o comando git remote add origin <URL_DO_REPOSITÓRIO_REMOTO>.
+Substitua <URL_DO_REPOSITÓRIO_REMOTO> pela URL que você copiou.
+Verifique se o remote foi adicionado corretamente com o comando git remote -v.
+
+Envie seu projeto para o repositório remoto:
+
+Execute o comando git push -u origin master.
+O parâmetro -u define o branch remoto padrão para futuras operações de push.
+Insira suas credenciais de login do GitHub (ou outro serviço) quando solicitado.
+Pronto! Seu projeto local agora está sincronizado com o repositório remoto. 
