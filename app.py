@@ -1,12 +1,19 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from randan_data import data
 import funcoes
 
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 from api import bp
 app.register_blueprint(bp)
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
+    
 # @app.route("/", methods=("GET", ))
 # def index():
 #     return jsonify({"status":200, "message": "API Do Luiz_Gustavo_Arduino_Batista"})
