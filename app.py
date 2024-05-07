@@ -1,6 +1,4 @@
-from flask import Flask, jsonify, request, render_template
-from randan_data import data
-import funcoes
+from flask import Flask, render_template
 
 app = Flask(__name__)
 

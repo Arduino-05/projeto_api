@@ -7,40 +7,40 @@ bp = Blueprint("api", __name__)
 
 
 
-@bp.route("/api/", methods=("GET", ))
+@bp.route("/api/", methods= ["GET"])
 def index():
     return jsonify({"status":200, "message": "API Do Luiz_Gustavo_Arduino_Batista"})
 
-@bp.route("/api/aleatorios", methods=("GET", ))
+@bp.route("/api/aleatorios", methods= ["GET"])
 def aleatorios():
     import random
     a = random.randint(49, 100)
     return jsonify({"status": 200, "data": a })
 
-@bp.route("/api/argumentos/<string:nome>", methods=("GET", ))
+@bp.route("/api/argumentos/<string:nome>", methods= ["GET"])
 def argumento(nome: str):
     return jsonify({"status": 200, "data": nome})
 
-@bp.route("/api/argumentos", methods=("GET", ))
+@bp.route("/api/argumentos", methods= ["GET"])
 def arg_implicito():
     return jsonify({"status": 200, "data": request.args["nome"]})
 
-@bp.route("/api/idades", methods=("GET", ))
+@bp.route("/api/idades", methods= ["GET"])
 def idades():
     num = funcoes.maiores(data)
     return jsonify({"status": 200, "data": num})
 
-@bp.route("/api/salario", methods=("GET", ))
+@bp.route("/api/salario", methods= ["GET"])
 def salario():
     salario = funcoes.salario(data)
     return jsonify({"status": 200,"data": salario})
 
-@bp.route("/api/maior_salario", methods=("GET", ))
+@bp.route("/api/maior_salario", methods= ["GET"])
 def max():
     max = funcoes.maxsalarios(data)
     return jsonify({"status": 200, "data": max})
 
-@bp.route("/api/profissoes", methods=("GET", ))
+@bp.route("/api/profissoes", methods= ["GET"])
 def profissoes():
     profissoes = funcoes.media_profissao(data)
     return jsonify({"status": 200, "data":profissoes})
